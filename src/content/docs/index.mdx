@@ -1,0 +1,46 @@
+---
+title: Grading Guide
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: Du möchtest deine Karten graden? Hast aber keine Ahnung was, wo, wie? Dann bist du hier genau richtig!
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Verschaffe dir einen Überblick
+      link: /guides/example/
+      icon: right-arrow
+      variant: primary
+---
+
+import { CardGrid } from '@astrojs/starlight/components';
+import Heart from '~icons/ph/heart-fill';
+import ShootingStar from '~icons/ph/shooting-star-fill';
+import LinkCard from '../../components/LinkCard.astro';
+
+## Warum möchtest du graden?
+
+<CardGrid>
+  <LinkCard
+    description="Die größtmögliche Wertsteigerung ist für dich das wichtigste."
+    href="/guides/example/"
+    title="Wertsteigerung"
+    variant="primary">
+    <ShootingStar
+      aria-hidden="true"
+      class="icon"
+      slot="icon"
+      style="background-color: var(--sl-color-orange-low); border-color: var(--sl-color-orange)" />
+  </LinkCard>
+  <LinkCard
+    description="An dieser Karte hängen Erinnerungen und du möchtest sie schützen."
+    href="/reference/example/"
+    title="Persönlicher Wert"
+    variant="primary">
+    <Heart
+      aria-hidden="true"
+      class="icon"
+      slot="icon"
+      style="background-color: var(--sl-color-red-low); border-color: var(--sl-color-red)" />
+  </LinkCard>
+</CardGrid>
