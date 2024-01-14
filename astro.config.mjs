@@ -9,7 +9,7 @@ export default defineConfig({
     starlight({
       customCss: ['./src/css/tailwind.css'],
       editLink: {
-        baseUrl: 'https://github.com/bamboechop/',
+        baseUrl: 'https://github.com/bamboechop/grading-guide/edit/main/',
       },
       sidebar: [{
         label: 'Guides',
